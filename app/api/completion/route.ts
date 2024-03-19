@@ -13,7 +13,7 @@ export async function POST(req: Request) {
 
   const response = Hf.textGenerationStream({
     model: 'google/gemma-7b',
-    inputs: `<|prompter|>${Act as Developer}<|endoftext|><|assistant|>`,
+    inputs: `<|prompter|>${prompt}<|endoftext|><|assistant|>`,
     parameters: {
       max_new_tokens: 2000,
       // @ts-ignore (this is a valid parameter specifically in OpenAssistant models)
