@@ -8,6 +8,10 @@ export default function Chat() {
 
   return (
     <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
+      {/* Logo einfügen */}
+      <div className="mb-4">
+        <img src="/pfad/zum/deinem-logo.png" alt="Logo" className="mx-auto" /> {/* Stelle sicher, dass du "/pfad/zum/deinem-logo.png" durch den tatsächlichen Pfad zu deinem Logo ersetzt. */}
+      </div>
       <h4 className="text-xl font-bold text-gray-900 md:text-xl pb-4">
         useCompletion Example
       </h4>
@@ -26,7 +30,7 @@ export default function Chat() {
         <input
           className="fixed bottom-0 w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
           value={input}
-          placeholder="Say something..."
+          placeholder="Frag mich"
           onChange={handleInputChange}
         />
       </form>
